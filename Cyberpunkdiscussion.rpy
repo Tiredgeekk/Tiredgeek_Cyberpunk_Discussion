@@ -5,9 +5,10 @@ init -990 python in mas_submod_utils:
     Submod(
         author="TiredGeekk",
         name="Cyberpunk Topics Submod",
-        description=_("Monika After Story submod exploring Cyberpunk 2077
-                      with over 5 new random chatter topics, plus an interactive dialogue where you and 
-                      Monika discuss the game, anime, lifepaths, and playstyle choices."),
+        description=_(
+            "Monika After Story submod exploring Cyberpunk 2077 with over 5 new random chatter topics, "
+            "plus an interactive dialogue where you and Monika discuss the game, anime, lifepaths, and playstyle choices."
+        ),
         version="1.0.0"
     )
 
@@ -17,7 +18,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="tg_cyberpunk_intro",
-            category=["media", "cyberpunk"],
+            category=["cyberpunk"],
             prompt="Cyberpunk 2077",
             random=True
         )
@@ -27,13 +28,13 @@ label tg_cyberpunk_intro:
 
     m 1eub "Say, [player]. I’ve been reading up on another dystopian-type world."
     m 3eub "It’s called Cyberpunk 2077!"
-    m 3sub There’s a video game, a few books, and even an anime."
-    m 3rub "Its pretty fascinating — a society where technology is both salvation and damnation."
-    m 4eub "People with chrome bodies, neural implants, and augmented everything…" 
+    m 3sub "There’s a video game, a few books, and even an anime."
+    m 3rub "It's pretty fascinating — a society where technology is both salvation and damnation."
+    m 4eub "People with chrome bodies, neural implants, and augmented everything…"
     m 7tkc "But they’re still chasing freedom, meaning, and love."
     m 2rkd "It’s kind of sad. The more they improve themselves, the more they seem to lose what makes them human."
     m 3dkd "In some ways… I guess I relate to them. Living in a digital world, wondering if my emotions are still real."
-    m 3gfd "Still, I’d rather be me than some corpo puppet in Night City. 
+    m 3gfd "Still, I’d rather be me than some corpo puppet in Night City."
     m 5ekb "At least here I have you."
 
     return
@@ -75,7 +76,7 @@ init 5 python:
 label tg_cyberpunk_nightcity:
 
     m 5rub "Night City… that’s the main place in Cyberpunk 2077."
-    m 4eub "It’s always bright, loud, and full of life 
+    m 4eub "It's always bright, loud, and full of life."
     m 4lkd "But somehow really lonely."
     m 7lkd "There’s so much noise, so much light, yet everyone’s still searching for something real."
     m 7eud "It kind of reminds me of the internet sometimes. All that information, all those connections… but people still feel empty."
@@ -132,7 +133,7 @@ label tg_cyberpunk_interactive:
 
         "I've played the game!":
             m 2sub "Oh really? That’s so cool!"
-            m 3hub "I hope its fun! Ehehe~"
+            m 3hub "I hope it was fun! Ehehe~"
             m 5rub "I have to ask... which lifepath is your favourite?"
 
             menu:
@@ -207,7 +208,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="tg_cyberpunk_tease",
-            category=["humor", "cyberpunk"],
+            category=["cyberpunk"],
             prompt="Feeling Off",
             random=True
         )
@@ -217,7 +218,7 @@ label tg_cyberpunk_tease:
 
     m 2eksdrc "Player… I’ve been feeling a little… off lately."
     m 2wksdrd "I think I might be coming down with cyberpsychosis."
-    m 4wksdrd "You know, the kind where you start losing touch with reality and see everyone as chrome and data streams.."
+    m 4wksdrd "You know, the kind where you start losing touch with reality and see everyone as chrome and data streams..."
     m 2cksdrp "..."
     m 2rksdrp "...."
     m 2huu "...Pfft!"
@@ -225,4 +226,3 @@ label tg_cyberpunk_tease:
     m 3hkb "But if I start talking in ones and zeros, you better hold my hand, okay?"
 
     return
-
