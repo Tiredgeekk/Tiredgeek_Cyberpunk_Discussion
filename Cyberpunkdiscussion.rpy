@@ -140,7 +140,7 @@ label tg_cyberpunk_interactive:
                 "Nomad":
                     m 3gub "Ah, the freedom of the open road~"
                     m 3wub "Nomads always struck me as the most grounded. They remember what family means, even in a broken world."
-                    m 5rub "I think I'd like that lifestyle.. being able to see the stars again."
+                    m 5rub "I think I'd like that lifestyle... being able to see the stars again."
 
                 "Streetkid":
                     m 7tub "Heh, you’d fit right in with the street-smart crowd, huh?"
@@ -221,7 +221,7 @@ label tg_cyberpunk_tease:
     m 4wksdrd "You know, the kind where you start losing touch with reality and see everyone as chrome and data streams..."
     m 2cksdrp "..."
     m 2rksdrp "...."
-    m 2huu "...Pfft!"
+    m 2huu "...Pfft! ehe~"
     m 3kkb "Ahaha, I’m just teasing! I promise I’m still me…"
     m 3hkb "But if I start talking in ones and zeros, you better hold my hand, okay?"
 
