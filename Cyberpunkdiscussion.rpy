@@ -140,7 +140,7 @@ label tg_cyberpunk_interactive:
                 "Nomad":
                     m 3gub "Ah, the freedom of the open road~"
                     m 3wub "Nomads always struck me as the most grounded. They remember what family means, even in a broken world."
-                    m 5rub "I think I'd like that lifestyle... being able to see the stars again."
+                    m 5rub "I think I'd like that lifestyle.. being able to see the stars again."
 
                 "Streetkid":
                     m 7tub "Heh, you’d fit right in with the street-smart crowd, huh?"
