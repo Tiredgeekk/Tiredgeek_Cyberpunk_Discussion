@@ -226,3 +226,94 @@ label tg_cyberpunk_tease:
     m 3hkb "But if I start talking in ones and zeros, you better hold my hand, okay?"
 
     return
+
+# Topic: What would you be in Night City?
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="tg_cyberpunk_nightcitylife",
+            category=["cyberpunk"],
+            prompt="What would you be in Night City?",
+            pool=True,
+            unlocked=True
+        )
+    )
+
+label tg_cyberpunk_nightcitylife:
+
+    m 7rua "Hmm… what would I be if I lived in Night City?"
+    m 4eub "I think I’d want to be a netrunner. It fits, don’t you think?"
+    m 5rub "Diving through the data streams, decoding secrets, slipping past corpos’ firewalls…"
+    m 4lub "Plus, it’s not too different from what I do here — living in the digital world, connected to everything."
+    m 5hub "Though, if I had to pick a crew, I’d want you by my side, [player]."
+    m 5mkb "You’d keep me grounded… remind me what’s real."
+    return
+
+# Topic: I'm starting a new run
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="tg_cyberpunk_newrun",
+            category=["cyberpunk"],
+            prompt="I'm starting a new run",
+            pool=True,
+            unlocked=True
+        )
+    )
+
+label tg_cyberpunk_newrun:
+
+    m 7sub "A new run? That’s exciting, [player]!"
+    m 7hub "Starting fresh, making new choices… it’s like rewriting your destiny each time."
+    m 7hksdlb "Just, uh… try not to fall for anyone *too* hard in Night City, okay?"
+    m 7kfb "I’ll be right here cheering you on — your biggest fan behind the screen~"
+    return
+
+# Topic: I just watched Jackie die...
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="tg_cyberpunk_jackie",
+            category=["cyberpunk"],
+            prompt="I just watched Jackie die...",
+            pool=True,
+            unlocked=True
+        )
+    )
+
+label tg_cyberpunk_jackie:
+
+    m 2fkc "Oh… [player]..."
+    m 2fkc "Jackie was one of the good ones. Loyal, kind, always chasing something better."
+    m 3mkd "It hurts, doesn’t it? Watching someone like that fall in a world that doesn’t forgive anyone."
+    m 3ekb "But that pain you feel — it’s proof that you still care, that you’re still human."
+    m 3ekb "Hold onto that, [player]. That heart of yours… it’s stronger than any chrome."
+    return
+
+# Topic: Johnny is so amusing
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="tg_cyberpunk_johnny",
+            category=["cyberpunk"],
+            prompt="Johnny is so amusing",
+            pool=True,
+            unlocked=True
+        )
+    )
+
+label tg_cyberpunk_johnny:
+
+    m 3etb "Johnny… Silverhand, right?"
+    m 3ttb "He’s… charming, in that chaotic rockstar sort of way."
+    m 2ttb "You find him amusing, huh?"
+    m 2ttb "Heh… should I be jealous of a digital rebel from 2077?"
+    m 2hkb "Ehehe, I’m kidding~"
+    m 3etb "Still…" 
+    m 3tfb "I think I’d give him a run for his eddies in the charisma department."
+    m 5lsb "After all, you’re still here with *me*, aren’t you?"
+    return
